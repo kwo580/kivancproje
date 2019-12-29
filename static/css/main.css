@@ -1,0 +1,20 @@
+
+.yazifontunavbar
+{
+    font-size: 28px;
+    color: white;
+}
+.yazifont
+{
+    color: white;
+    font-size: 28px;
+}
+.thumbnail:hover {
+    background-color: darkkhaki;
+    opacity: 0.6;
+}
+#navbarbosluk{
+    margin-left: 20px;
+     margin-right: 20px;
+     
+}

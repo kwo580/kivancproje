@@ -1,0 +1,33 @@
+{% extends "taslak.html" %} {% block icerik %}
+<p style="color: black;">{{hata}}</p>
+</body>
+<body  style="background-image: url(/static/img/back.jpg);  background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;">
+
+<!-- Kullanıcının siteye giriş yapması için kullanılan form kısmı -->
+<div class="container  ">
+    <div class="row" >
+    <div class=" col-6 offset-md-3 align-self-center " style="background-color: #ffc9e6;color:black;font-size: 34px;">
+     <form action="/sahiplendirkayit" method="POST">
+    <div class="form-group" >
+          <label for="exampleInputEmail1">Tur seçiniz</label>
+          <select name="tur">
+              <option selected value="/static/img/kedi3.jpg">kedi</option>
+              <option value="/static/img/köpek4.jpg">kopek</option>
+              <option value="/static/img/kus3.jpg">kus</option>
+            </select>
+        </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Özellikleri</label>
+      <textarea name="yorum" id="" cols="30" rows="10" placeholder="genel bilgilerini yazını"></textarea>
+    </div>
+    <button type="submit" class="btn-outline-dark rounded-top">Sahiplendir</button>
+
+  </form>
+</div>
+</div>
+</div>
+<div style="margin-bottom:340px;">
+</div>
+{% endblock %}

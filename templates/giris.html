@@ -1,0 +1,30 @@
+{% extends "taslak.html" %} {% block icerik %}
+<p style="color: black;">{{hata}}</p>
+</body>
+<body  style="background-image: url(/static/img/back.jpg);  background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;">
+
+<!-- Kullanıcının siteye giriş yapması için kullanılan form kısmı -->
+<div class="container  ">
+    <div class="row" >
+    <div class=" col-6 offset-md-3 align-self-center " style="background-color: #ffc9e6;color:black;font-size: 34px;">
+     <form action="/girisyap" method="POST">
+    
+    <div class="form-group" >
+      <label for="exampleInputEmail1">Mail adresiniz</label>
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="maiil adresiniz">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Parola</label>
+      <input type="password" name="parola"class="form-control" id="exampleInputPassword1" placeholder="Parolanız">
+    </div>
+    <button type="submit" class="btn-outline-dark rounded-top">Giriş yap</button>
+
+  </form>
+</div>
+</div>
+</div>
+<div style="margin-bottom:340px;">
+</div>
+{% endblock %}

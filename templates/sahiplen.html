@@ -1,0 +1,28 @@
+{% extends "taslak.html" %} {% block icerik %}
+<div class="container" >
+<table class="table"style="background-color: #ffc9e6;color:black;font-size: 34px;">
+    <thead>
+      <tr>
+        <th scope="col">ad</th>
+        <th scope="col">soyad</th>
+        <th scope="col">adres</th>
+        <th scope="col">tur</th>
+        <th scope="col">yorum</th>
+      </tr>
+    </thead>
+    <tbody>
+            {% for yap in veri %}
+        <tr style="margin-top: 20px;">
+          <td>{{ yap.get("ad") }}</td>
+          <td>{{ yap.get("soyad") }}</td>
+          <td>{{ yap.get("adres") }}</td>
+          
+          <td><img src='{{ yap.get("tur") }}' alt="" style="width: 50px;height: 50px;"></td>
+          <td>{{ yap.get("yorum") }}</td>
+        </tr>
+        {% endfor %}
+        <div>
+       
+</table>
+</div>
+{% endblock %}
